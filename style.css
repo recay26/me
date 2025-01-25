@@ -352,6 +352,12 @@ span{
     align-items: center;
     padding: 60px 0;
 }
+.heading1{
+    font-size: 3.6rem;
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 500;
+}
 .container{
     width: 90%;
     max-width: 1200px;
