@@ -221,18 +221,18 @@
                 <h4 class="title">Contact me</h4>
                 <form action="" id="contact-form">
                     <div class="input-box">
-                        <input type="text" id="name" class="input" placeholder="Your Name">
+                        <input type="text" id="name" class="input" placeholder="Your Name" required minlength="2" maxlength="50">
                     </div>
                     <div class="input-box">
-                        <input type="email" id="email" class="input" placeholder="Your E-mail">
+                        <input type="email" id="email" class="input" placeholder="Your E-mail" required minlength="10" maxlength="100">
                     </div>
                     <div class="input-box">
-                        <input type="tel" id="tel" class="input" placeholder="Your Number">
+                        <input type="tel" id="tel" class="input" placeholder="Your Number" required minlength="1" maxlength="10">
                     </div>
                     <div class="input-box">
-                        <textarea name="" id="message" class="input" placeholder="Your message"></textarea>
+                        <textarea name="" id="message" class="input" placeholder="Your message" required minlength="10" maxlength="500"></textarea>
                     </div>
-                    <input type="submit" onclick="sendMail()" value="Send" class="btnn">
+                    <input type="submit"  value="Send" class="btnn">
                 </form>
             </div>
         </div>
@@ -241,6 +241,6 @@
         <p>All Rights Reserved &copy; 2024 | Coded By <a href="#" style="text-decoration: underline;color: #4e9eff;font-weight: 600;">Recay</a></p>
     </footer>
     <script src="index.js"></script>
-    <script src="send.js"></script>
+
 </body>
 </html>
