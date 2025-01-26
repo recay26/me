@@ -212,7 +212,7 @@ span{
         flex-direction: column-reverse;
         gap: 0rem;
         padding: 0rem 4rem;
-        margin-top: 0px;
+        margin-top: -10px;
     }
     .home-content h1{
         font-size: 4rem;
@@ -231,7 +231,7 @@ span{
         letter-spacing: 0rem;
     }
     .services{
-        margin-top: -80px;
+        margin-top: -100px;
     }
     footer p{
         font-size: 1.6rem;
