@@ -643,31 +643,25 @@ form{
     .item{
         grid-template-columns: 1fr;
         width: 80%;
-        height: 520px;
+        height: 510px;
         margin-bottom: 50px;
     }
     .contact{
         display: none;
     }
-    .text{
-        font-size: 40px;
-        text-align: center;
-    }
-    .submit-form{
-        background-color: var(--color-primary);
-        display: block;
-        justify-content: left;
-        align-items: center;
+    .title{
+        font-size: 26px;
+        left: 0;
     }
     form{
-        padding: 0 20px;
+        padding: 0 5px;
     }
     .input-box textarea{
         height: 115px;
         padding: 10px;
     }
     .btnn{
-        width: 90%;
+        width: 85%;
         padding: 10px 0px;
         margin-top: 5px;
         font-size: 1.6rem;
@@ -676,11 +670,11 @@ form{
 }
 @media (min-width: 769px) and (max-width: 1279px){
     .item{
-        width: 85%;
+        width: 80%;
         height: 570px;
     }
     form{
-        padding: 0 30px;
+        padding: 0 20px;
     }
 }
 
