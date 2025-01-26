@@ -39,6 +39,7 @@ function sendMail(event) {
 
     let parms = {
         from_name : document.getElementById("name").value,
+        name : document.getElementById("name").value,
         email_id : document.getElementById("email").value,
         number : document.getElementById("tel").value,
         message : document.getElementById("message").value
@@ -54,3 +55,30 @@ function sendMail(event) {
         });
 }
 document.getElementById("contact-form").addEventListener("submit", sendMail);
+
+
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    // Applique les animations
+    icon.classList.add("rotate", "fade-out");
+
+    // Attends un peu avant de changer l'image et réactiver la visibilité
+    setTimeout(() => {
+        if (document.body.classList.contains("dark-theme")) {
+            icon.src = "img/icons8-soleil-50 (1).png";
+        } else {
+            icon.src = "img/icons8-symbole-de-la-lune-30-removebg-preview.png";
+        }
+        icon.classList.remove("fade-out"); // Réapparaît
+        icon.classList.add("fade-in"); // Animation d'entrée
+    }, 300);
+
+    // Supprime les classes d'animation après l'exécution
+    setTimeout(() => {
+        icon.classList.remove("rotate", "fade-in");
+    }, 800);
+};
