@@ -6,6 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "0iEW28aJ3HIQOrBuY",
+        });
+    })();
+</script>
 </head>
 <body>
     <header class="header">
@@ -209,20 +219,20 @@
             </div>
             <div class="submit-form">
                 <h4 class="title">Contact me</h4>
-                <form action="">
+                <form action="" id="contact-form">
                     <div class="input-box">
-                        <input type="text" class="input" placeholder="Your Name">
+                        <input type="text" id="name" class="input" placeholder="Your Name">
                     </div>
                     <div class="input-box">
-                        <input type="email" class="input" placeholder="Your E-mail">
+                        <input type="email" id="email" class="input" placeholder="Your E-mail">
                     </div>
                     <div class="input-box">
-                        <input type="tel" class="input" placeholder="Your Number">
+                        <input type="tel" id="tel" class="input" placeholder="Your Number">
                     </div>
                     <div class="input-box">
-                        <textarea name="" id="" class="input" placeholder="Your message"></textarea>
+                        <textarea name="" id="message" class="input" placeholder="Your message"></textarea>
                     </div>
-                    <input type="submit" value="Send" class="btnn">
+                    <input type="submit" onclick="sendMail()" value="Send" class="btnn">
                 </form>
             </div>
         </div>
@@ -231,5 +241,6 @@
         <p>All Rights Reserved &copy; 2024 | Coded By <a href="#" style="text-decoration: underline;color: #4e9eff;font-weight: 600;">Recay</a></p>
     </footer>
     <script src="index.js"></script>
+    <script src="send.js"></script>
 </body>
 </html>
