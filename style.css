@@ -210,9 +210,9 @@ span{
 @media (max-width:768px){
     .home{
         flex-direction: column-reverse;
-        gap: 6rem;
+        gap: 0rem;
         padding: 0rem 4rem;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .home-content h1{
         font-size: 4rem;
@@ -222,12 +222,16 @@ span{
     }
     .cv{
         display: flex;
+        justify-content: center;
     }
     .btn, .btn1{
         padding: 1rem 2rem;
         background: var(--bg-color);
         font-size: 1.4rem;
         letter-spacing: 0rem;
+    }
+    .services{
+        margin-top: -80px;
     }
     footer p{
         font-size: 1.6rem;
