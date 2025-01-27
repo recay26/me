@@ -223,6 +223,7 @@ span{
     .cv{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .btn, .btn1{
         padding: 1rem 2rem;
@@ -694,5 +695,6 @@ footer{
     color: var(--black);
     background-color: var(--bg-color);
     box-shadow: var(--box-shadow);
+    width: 100%;
 }
 /*------------footer-------------------*/
