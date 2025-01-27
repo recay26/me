@@ -82,3 +82,10 @@ icon.onclick = function () {
         icon.classList.remove("rotate", "fade-in");
     }, 800);
 };
+
+const toggleBtn = document.getElementById('menu-icon');
+const dropDownMenu = document.querySelector('.dropmenu');
+
+toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open');
+}
