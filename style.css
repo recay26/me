@@ -19,6 +19,7 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    overflow: hidden;
 }
 html{
     font-size: 62.5%;
