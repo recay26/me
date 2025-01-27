@@ -19,7 +19,6 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    overflow: hidden;
 }
 html{
     font-size: 62.5%;
@@ -28,6 +27,7 @@ html{
 body{
     background-color: var(--bg-color);
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 html::-webkit-scrollbar{
     width: 0.6rem;
