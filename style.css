@@ -238,6 +238,10 @@ span{
     footer p{
         font-size: 1.6rem;
     }
+    footer .a2 {
+        right: 3%;
+        padding: 5px;
+    }
 }
 /*------------1st section-------------------*/
 
@@ -343,7 +347,6 @@ span{
         margin-bottom: -110px;
     }
 }
-
 /*------------2end section-------------------*/
 
 /*------------3rd section-------------------*/
@@ -697,5 +700,19 @@ footer{
     background-color: var(--bg-color);
     box-shadow: var(--box-shadow);
     width: 100%;
+}
+footer .a2 {
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+    color: var(--bg-color);
+    background-color: var(--color-primary);
+    padding: 5px;
+    border-radius: 50%;
+}
+footer .a2:hover{
+    color: var(--color-primary);
+    background-color: var(--bg-color);
+    border: 3px solid var(--color-primary);
 }
 /*------------footer-------------------*/
