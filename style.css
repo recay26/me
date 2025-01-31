@@ -238,6 +238,10 @@ span{
     color: var(--white);
     box-shadow: var(--box-shadow);
 }
+.cv{
+    display: flex;
+    width: 100%;
+}
 @media (max-width:768px){
     .home{
         flex-direction: column-reverse;
@@ -252,9 +256,7 @@ span{
         display: none;
     }
     .cv{
-        display: flex;
         justify-content: center;
-        width: 100%;
     }
     .btn, .btn1{
         padding: 1rem 2rem;
@@ -263,7 +265,7 @@ span{
         letter-spacing: 0rem;
     }
     .services{
-        margin-top: -100px;
+        margin-top: -20px;
     }
     footer p{
         font-size: 1.4rem;
@@ -331,24 +333,30 @@ span{
     margin: auto;
     color: var(--black);
 }
-
+.services img{
+    width: 60%;
+}
 @media (max-width:468px){
     .services-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .service-info{
-        height: 500px;
-        padding: 1em;
+        height: 330px;
+        padding: 0.2em;
     }
     .service-box{
-        height: 470px;
+        height: 300px;
     }
     .service-info h4{
+        font-size: 2rem;
         margin-top:0px;
         margin-bottom: -60px;
     }
     .service-info p{
         font-size: 1.8rem;
+    }
+    .services img{
+        width: 80%;
     }
 }
 @media (min-width: 469px) and (max-width: 767px){
@@ -362,6 +370,12 @@ span{
         margin-top:-15px;
         margin-bottom: -60px;
     }
+    .services img{
+        width: 40%;
+    }
+    .service-info{
+        gap: 60px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1279px){
     .services-container{
@@ -374,6 +388,17 @@ span{
     .service-info h4{
         margin-top:-10px;
         margin-bottom: -110px;
+    }
+    .services img{
+        width: 60%;
+    }
+    .service-info{
+        gap: 80px;
+    }
+}
+@media(min-width:1600px){
+    .services img{
+        width: 40%;
     }
 }
 /*------------2end section-------------------*/
@@ -652,6 +677,11 @@ form{
     border: 3px solid var(--bg-color);
     background-color: var(--color-primary);
 }
+input:focus, textarea:focus {
+    outline: none; /* Supprime l'effet par défaut */
+    border: 2px solid white; 
+}
+
 .input::placeholder{
     color: var(--bg-color);
 }
