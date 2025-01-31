@@ -71,7 +71,7 @@ icon.onclick = function () {
         if (document.body.classList.contains("dark-theme")) {
             icon.src = "img/icons8-soleil-50 (1).png";
         } else {
-            icon.src = "img/icons8-symbole-de-la-lune-30-removebg-preview.png";
+            icon.src = "img/crescent-moon.png";
         }
         icon.classList.remove("fade-out"); // Réapparaît
         icon.classList.add("fade-in"); // Animation d'entrée

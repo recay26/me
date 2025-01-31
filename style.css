@@ -124,7 +124,7 @@ header{
         cursor: pointer;
     }
     .header{
-        padding: 10px 30px;
+        padding: 10px 3F0px;
     }
     .navbar{
         position: absolute;
@@ -284,7 +284,6 @@ span{
     font-size: 4rem;
     text-align: center;
     color: var(--color-primary);
-    text-decoration: underline;
     margin-top: 20px;
 }
 .services-container{
@@ -387,7 +386,6 @@ span{
     font-size: 4rem;
     text-align: center;
     color: var(--color-primary);
-    text-decoration: underline;
     margin-top: 20px;
 }
 .skills .container{
